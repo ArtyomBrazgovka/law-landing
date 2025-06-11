@@ -1,6 +1,6 @@
 import "./Nav.css";
 
-export default function Nav() {
+export function Nav() {
   return (
     <nav class="nav">
       <ul>

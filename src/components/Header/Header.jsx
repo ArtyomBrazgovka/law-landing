@@ -1,8 +1,8 @@
 import "./Header.css";
-import Nav from "./Nav/Nav.jsx";
+import { Nav } from "./Nav/Nav.jsx";
 import logo from "./../../assets/headerLogo.png";
 
-export default function Header() {
+export function Header() {
   return (
     <header className="header">
       <div className="header-row">
