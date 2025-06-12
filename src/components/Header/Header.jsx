@@ -1,6 +1,6 @@
 import "./Header.css";
 import { Nav } from "./Nav/Nav.jsx";
-import logo from "./../../../public/images/logo.png";
+import logo from "/images/logo.png";
 
 export function Header() {
   return (

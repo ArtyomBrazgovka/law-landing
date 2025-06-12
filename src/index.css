@@ -1,37 +1,26 @@
 @font-face {
   font-family: "Optimal Regular";
-  src: url("./../public/assets/fonts/optimal-regular.ttf") 
-    format("ttf");
+  src: url("/fonts/optimal-regular.ttf") format("ttf");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "OptimalEL Regular";
-  src: url("./../public/assets/fonts/optimalEL-text.otf") 
-    format("otf");
+  src: url("/fonts/optimalEL-text.otf") format("otf");
   font-style: normal;
   font-display: swap;
 }
 
-
 body {
   margin: 0;
-  font-family: -apple-system, "Montserrat", "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-ul{
-  padding: 0;
-  margin: 0;
-}
-
-a{
-  padding: 0;
-  margin: 0;
+a {
+  text-decoration: none;
 }
 
 * {
@@ -40,7 +29,7 @@ a{
   padding: 0;
 }
 
-li{
+li {
   list-style: none;
 }
 
@@ -50,12 +39,3 @@ li{
   --border-color: rgb(137, 130, 140);
 }
 
-
-.montserrat{
-  font-family: 'Montserrat';
-  font-style: normal;
-}
-
-.montserrat-light{
-  font-weight: 300;
-}
