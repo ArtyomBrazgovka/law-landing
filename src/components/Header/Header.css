@@ -11,7 +11,7 @@
 .header-logo-link {
   height: 50%;
   width: 36px;
-  height: 23px;
+  height: 24px;
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -27,5 +27,6 @@
 
 .phone {
   color: var(--light-yellow);
-  font-family: "Montserrat regular", sans-serif;
+  font-family: "Optimal Regular", sans-serif;
+  font-weight: 400;
 }
