@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Optimal Regular";
+  src: url("/fonts/optimal-regular.ttf") format("ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OptimalEL Regular";
+  src: url("/fonts/optimalEL-text.otf") format("otf");
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --light-yellow: rgb(227, 195, 122);
+  --disable-gray: rgba(177, 177, 177, 1);
+  --border-color: rgb(137, 130, 140);
+}
+
