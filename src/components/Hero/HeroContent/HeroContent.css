@@ -1,5 +1,44 @@
 .container-hero-content{
     width: 100%;
     height: 90vh;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 163px;
+    position: relative;
+    top: calc(150px - 10vh);
+    left: 92px;
     
 }
+
+.upper-title{
+    width: 100%;
+    height: 128px;
+   
+}
+
+h1{
+    color: white;
+    padding-top: 12px;
+    font-size: 56px;
+    font-family: "OptimalEL Regular", sans-serif;
+    text-transform: uppercase;
+    font-weight: 10;
+}
+
+.lower-title{
+    margin-top: 20px;
+    width: 92%;
+    height: 19px;
+}
+
+p{
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    font-size: 16;
+    color: rgba(255, 255, 255, 0.25);
+}
+
