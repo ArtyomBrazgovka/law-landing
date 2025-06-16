@@ -1,6 +1,6 @@
 .block{
     height: 144px;
-    background-color: rgba(35, 34, 40, 0.5);
+   
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
     width: 25%;
     height: 33px;
     margin: 38px 194px 78px 32px;
-    color: rgba(227, 195, 122, 1);
+    color: var(--light-yellow);
     font-family: "OptimalEL Regular", sans-serif;
     font-weight: 0;
     font-size: 30px;
@@ -26,5 +26,5 @@
     font-size: 14px;
     font-family: "OptimalEL Regular", sans-serif;
     font-weight: 100;
-    color: rgba(177, 177, 177, 1);
+    color: var(--disable-gray);
 }

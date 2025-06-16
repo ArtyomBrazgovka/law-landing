@@ -57,9 +57,8 @@ export function HeroContent() {
       </div>
 
       <div className="statue">
-        <img class = "lists" src = {lists} alt = "Листы"></img>
-        <img class = "statue-img" src = {statue} alt = "Статуя"></img>
-        
+        <img className="lists" src={lists} alt="Листы"></img>
+        <img className="statue-img" src={statue} alt="Статуя"></img>
       </div>
     </div>
   );
