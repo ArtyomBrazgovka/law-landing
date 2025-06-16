@@ -1,30 +1,30 @@
 import IMask from "imask";
 import "./HeroContent.css";
-import { useEffect, useRef } from "react";
+import {useEffect, useRef} from "react";
 import "./BlockNumber/BlockNumber.jsx";
-import { BlockNumber } from "./BlockNumber/BlockNumber.jsx";
+import {BlockNumber} from "./BlockNumber/BlockNumber.jsx";
 
-import statue from "/images/statue.png";
+import statue from "/images/statue.webp";
 
-import lists from "/images/lists.png";
+import lists from "/images/lists.webp";
 
 export function HeroContent() {
   const phoneInputRef = useRef(null);
 
   useEffect(() => {
-    if (!phoneInputRef.current) return;
+    if (phoneInputRef.current) {
+      const mask = IMask(phoneInputRef.current, {
+        mask: "+{7} (000) 000-00-00",
+        lazy: false,
+        definitions: {
+          0: /[0-9]/,
+        },
+      });
 
-    const mask = IMask(phoneInputRef.current, {
-      mask: "+{7} (000) 000-00-00",
-      lazy: false,
-      definitions: {
-        0: /[0-9]/,
-      },
-    });
-
-    return () => {
-      mask.destroy();
-    };
+      return () => {
+        mask.destroy();
+      };
+    }
   }, []);
   return (
     <div className="container-hero-content">
