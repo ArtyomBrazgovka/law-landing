@@ -24,8 +24,12 @@ export function HeroContent() {
       <div className="request">
         <p className="request-title">Нужна консультация?</p>
         <form className="request-form">
-          <PhoneInput className="request-phone"/>
-          <Button text="Заказать звонок" />
+          <PhoneInput
+            className="request-phone"
+            mask="+{7} (000) 000-00-00"
+            definitions={{0: /[0-9]/}}
+          />
+          <Button>"Заказать звонок"</Button>
         </form>
       </div>
       <div className="numbers">

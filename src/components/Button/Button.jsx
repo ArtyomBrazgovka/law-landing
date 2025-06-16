@@ -2,6 +2,6 @@ import "./Button.css"
 
 export function Button(props){
     return(
-        <button className="button">{props.text}</button>
+        <button className="button">{props.children}</button>
     )
 }

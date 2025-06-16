@@ -5,7 +5,7 @@ export function Nav() {
     <nav className="nav">
       <ul>
         <li>
-          <a className="nav-link" href="#hero">
+          <a className="nav-link" href=".">
             Главная
           </a>
         </li>
