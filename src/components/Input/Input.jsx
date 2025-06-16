@@ -5,7 +5,7 @@ import "./Input.css";
 export function Input(props) {
   const inputRef = useRef(null);
 
-  const {mask, definitions, type, mode} = props;
+  const {mask, definitions, type} = props;
 
   useEffect(() => {
     if (inputRef.current && mask) {
@@ -26,7 +26,6 @@ export function Input(props) {
       type={type}
       className="input"
       ref={inputRef}
-      inputMode={mode}
       required
     ></input>
   );

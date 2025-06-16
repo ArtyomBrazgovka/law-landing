@@ -8,7 +8,7 @@ import statue from "/images/statue.webp";
 import lists from "/images/lists.webp";
 
 import {Button} from "../../Button/Button.jsx";
-import {Input} from "../../Input/Input.jsx";
+import {PhoneInput} from "../../PhoneInput/PhoneInput.jsx";
 
 export function HeroContent() {
   return (
@@ -24,13 +24,7 @@ export function HeroContent() {
       <div className="request">
         <p className="request-title">Нужна консультация?</p>
         <form className="request-form">
-          <Input
-            className="request-phone"
-            mask="+{7} (000) 000-00-00"
-            definitions={{0: /[0-9]/}}
-            type="tel"
-            mode="numeric"
-          ></Input>
+          <PhoneInput className="request-phone"/>
           <Button text="Заказать звонок" />
         </form>
       </div>
