@@ -3,12 +3,12 @@ import "./Input.css";
 export function Input(props) {
   
 
-  const {type, innerRef} = props;
+  const {type, ref} = props;
   return (
     <input
       type={type}
       className="input"
-      ref={innerRef}
+      ref={ref}
       required
     ></input>
   );

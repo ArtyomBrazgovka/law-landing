@@ -29,7 +29,7 @@ export function HeroContent() {
             mask="+{7} (000) 000-00-00"
             definitions={{0: /[0-9]/}}
           />
-          <Button>"Заказать звонок"</Button>
+          <Button>Заказать звонок</Button>
         </form>
       </div>
       <div className="numbers">

@@ -18,11 +18,12 @@ export function PhoneInput(props) {
         maskInstance.destroy();
       };
     }
-  }, [mask, definitions]);
+  }, 
+  [mask, definitions]);
   return (
     <Input
       type="tel"
-      innerRef={inputRef}
+      ref={inputRef}
     ></Input>
   );
 }
