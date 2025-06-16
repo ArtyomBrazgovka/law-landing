@@ -39,6 +39,6 @@ li {
   --border-color: rgb(137, 130, 140);
   --title-color: rgba(255, 255, 255, 0.25);
   --placeholder-color: rgba(177, 177, 177, 1);
-  --hero-background: rgba(35, 34, 40, 0.91);
+  --background-color: rgba(35, 34, 40, 0.91);
   --numbers-background: rgba(35, 34, 40, 0.5);
 }
