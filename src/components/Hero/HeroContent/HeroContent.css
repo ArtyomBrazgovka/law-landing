@@ -25,7 +25,7 @@ h1{
     font-size: 56px;
     font-family: "OptimalEL Regular", sans-serif;
     text-transform: uppercase;
-    font-weight: 10;
+    font-weight: 100;
 }
 
 .lower-title{
@@ -96,4 +96,31 @@ p{
     gap: 2px;
     width: 65%;
     height: 144px;
+    z-index: 2;
 }
+
+.lists{
+    width: 100%;
+    height: 375px;
+    position: absolute;
+    mix-blend-mode: lighten;
+}
+
+.statue-img{
+    position: relative;
+    width: 100%;
+    height: 560px;
+    z-index: 3;
+}
+
+.statue{
+    position: absolute;
+    left: 698px;
+    top: 120px;
+    
+    width: 730px;
+    height: 812px;
+  
+
+}
+
