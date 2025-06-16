@@ -1,6 +1,5 @@
-import IMask from "imask";
 import "./HeroContent.css";
-import {useEffect, useRef} from "react";
+
 import "./BlockNumber/BlockNumber.jsx";
 import {BlockNumber} from "./BlockNumber/BlockNumber.jsx";
 
@@ -8,24 +7,10 @@ import statue from "/images/statue.webp";
 
 import lists from "/images/lists.webp";
 
+import {Button} from "../../Button/Button.jsx";
+import {Input} from "../../Input/Input.jsx";
+
 export function HeroContent() {
-  const phoneInputRef = useRef(null);
-
-  useEffect(() => {
-    if (phoneInputRef.current) {
-      const mask = IMask(phoneInputRef.current, {
-        mask: "+{7} (000) 000-00-00",
-        lazy: false,
-        definitions: {
-          0: /[0-9]/,
-        },
-      });
-
-      return () => {
-        mask.destroy();
-      };
-    }
-  }, []);
   return (
     <div className="container-hero-content">
       <div className="titles">
@@ -39,23 +24,21 @@ export function HeroContent() {
       <div className="request">
         <p className="request-title">Нужна консультация?</p>
         <form className="request-form">
-          <input
-            type="tel"
+          <Input
             className="request-phone"
-            ref={phoneInputRef}
-            inputMode="text"
-            required
-          ></input>
-          <button className="request-send">Заказать звонок</button>
+            mask="+{7} (000) 000-00-00"
+            definitions={{0: /[0-9]/}}
+            type="tel"
+            mode="numeric"
+          ></Input>
+          <Button text="Заказать звонок" />
         </form>
       </div>
-
       <div className="numbers">
         <BlockNumber number="89%" title="Выигранных дел" />
         <BlockNumber number="34" title="Сотрудника в штате" />
         <BlockNumber number="18" title="Лет на рынке" />
       </div>
-
       <div className="statue">
         <img className="lists" src={lists} alt="Листы"></img>
         <img className="statue-img" src={statue} alt="Статуя"></img>
