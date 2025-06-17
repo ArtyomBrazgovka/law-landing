@@ -18,7 +18,7 @@
   height: 128px;
 }
 
-h1 {
+.titles h1 {
   color: white;
   padding-top: 12px;
   font-size: 56px;
@@ -33,7 +33,7 @@ h1 {
   height: 18px;
 }
 
-p {
+.titles p {
   font-family: Montserrat, sans-serif;
   font-weight: 300;
   font-size: 16;
@@ -73,7 +73,7 @@ p {
   position: absolute;
   top: 536px;
   left: 92px;
-  background-color: var(--numbers-background);
+  background-color: rgba(var(--text-dark), 0.5);
   display: flex;
   gap: 2px;
   width: 62%;
