@@ -12,6 +12,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: Kornilow;
+  src: url("/fonts/kornilow.ttf") format("ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, Montserrat, sans-serif;
@@ -38,7 +45,6 @@ li {
   --disable-gray: rgba(177, 177, 177, 1);
   --border-color: rgb(137, 130, 140);
   --title-color: rgba(255, 255, 255, 0.25);
-  --placeholder-color: rgba(177, 177, 177, 1);
-  --background-color: rgba(35, 34, 40, 0.91);
-  --numbers-background: rgba(35, 34, 40, 0.5);
+  --bg-gray: rgba(217, 217, 217, 1);
+  --text-dark: 35, 34, 40;
 }

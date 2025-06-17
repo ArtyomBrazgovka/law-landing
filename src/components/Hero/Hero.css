@@ -11,5 +11,5 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: var(--background-color);
+  background-color: rgba(var(--text-dark), 0.91);
 }
