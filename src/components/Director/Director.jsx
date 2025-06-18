@@ -1,7 +1,7 @@
 import "./Director.css";
 
-import director from "/images/director.webp";
-import signature from "/images/signature.webp";
+import director from "/images/decorations/director.webp";
+import signature from "/images/decorations/signature.webp";
 
 export function Director() {
   return (

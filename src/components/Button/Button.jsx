@@ -1,7 +1,8 @@
 import "./Button.css"
 
 export function Button(props){
+    const {children, color = "black"} = props;
     return(
-        <button className="button">{props.children}</button>
+        <button style = {{color: color}}className="button">{children}</button>
     )
 }

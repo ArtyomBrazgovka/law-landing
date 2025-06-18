@@ -3,9 +3,9 @@ import "./HeroContent.css";
 import "./BlockNumber/BlockNumber.jsx";
 import {BlockNumber} from "./BlockNumber/BlockNumber.jsx";
 
-import statue from "/images/statue.webp";
+import statue from "/images/decorations/statue.webp";
 
-import lists from "/images/lists.webp";
+import lists from "/images/decorations/lists.webp";
 
 import {Button} from "../../Button/Button.jsx";
 import {PhoneInput} from "../../PhoneInput/PhoneInput.jsx";
@@ -29,7 +29,7 @@ export function HeroContent() {
             mask="+{7} (000) 000-00-00"
             definitions={{0: /[0-9]/}}
           />
-          <Button>Заказать звонок</Button>
+          <Button color="white">Заказать звонок</Button>
         </form>
       </div>
       <div className="numbers">
