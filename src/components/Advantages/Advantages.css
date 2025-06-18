@@ -1,0 +1,48 @@
+.advantages-section {
+  width: 100%;
+  height: 624px;
+  padding: 80px 70px;
+  background-image: url(/images/backgrouns/scales.webp);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.advantages-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.advantages-tiles {
+  display: flex;
+  justify-content: space-between;
+  height: 223px;
+  width: 100%;
+}
+
+.advantages-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 38%;
+  height: 81px;
+}
+
+.advantages-headline {
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  color: var(--disable-gray);
+}
+
+.advantages-subtitle {
+  width: 100%s;
+  font-size: 40px;
+  font-family: "Optimal Regular", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--text-dark);
+}

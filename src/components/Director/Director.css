@@ -14,7 +14,7 @@
 .director-background {
   width: 74%;
   height: 100%;
-  background-image: url("/images/director-background.webp");
+  background-image: url("/images/backgrounds/director-background.webp");
   background-color: var(--light-yellow);
 }
 

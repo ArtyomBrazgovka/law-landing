@@ -1,0 +1,33 @@
+.tiles {
+  display: flex;
+  border: 2px solid var(--bg-gray);
+  width: 24%;
+  padding: 32px 24px;
+}
+
+.tiles-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.tiles-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.tiles-title {
+  font-size: 16px;
+  font-family: "Optimal Regular", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.tiles-description {
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: var(--text-dark);
+}
