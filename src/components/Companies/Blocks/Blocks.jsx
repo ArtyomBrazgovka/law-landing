@@ -5,8 +5,8 @@ export function Blocks(props) {
   return (
     <div className="blocks">
       <div className="blocks-container">
-        <img class="blocks-icon" src={source} alt="иконка"></img>
-        <p class="blocks-title">{title}</p>
+        <img className="blocks-icon" src={source} alt="иконка"></img>
+        <p className="blocks-title">{title}</p>
       </div>
     </div>
   );
