@@ -3,6 +3,7 @@ import {Hero} from "./components/Hero/Hero.jsx";
 import {Director} from "./components/Director/Director.jsx";
 import {Advantages} from "./components/Advantages/Advantages.jsx";
 import {Experts} from "./components/Experts/Experts.jsx";
+import { Companies } from "./components/Companies/Companies.jsx";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Director />
       <Advantages />
       <Experts />
+      <Companies />
     </div>
   );
 }
