@@ -1,0 +1,44 @@
+.companies-section {
+  height: 480px;
+  padding: 80px;
+  background-image: url("/images/backgrounds/companies-background.webp");
+  background-color: rgb(var(--text-dark));
+}
+
+.companies-container,
+.companies-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.companies-container {
+  gap: 40px;
+}
+
+.companies-title {
+  gap: 30px;
+}
+
+.companies-headline {
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  color: var(--disable-gray);
+}
+
+.companies-subtitle {
+  font-size: 40px;
+  font-family: "Optimal Regular", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+
+.companies-blocks {
+  display: flex;
+  gap: 16px;
+  height: 200px;
+  width: 100%;
+}
