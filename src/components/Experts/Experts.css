@@ -1,0 +1,78 @@
+.experts-section {
+  width: 100%;
+  height: 542px;
+  padding: 70px 0px 90px 50px;
+  background-color: var(--ng-light-gray);
+}
+
+.experts-container {
+  display: flex;
+  gap: 70px;
+  height: 100%;
+}
+
+.experts-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px 0;
+  width: 36%;
+}
+
+.experts-team {
+  width: 60%;
+}
+
+.experts-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.experts-headline {
+  display: flex;
+  align-items: center;
+}
+
+.experts-headline div {
+  width: 10%;
+  height: 1px;
+  background-color: var(--disable-gray);
+}
+
+.experts-headline p {
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  color: var(--disable-gray);
+}
+
+.experts-subtitle {
+  width: 86%;
+  font-size: 40px;
+  font-family: "OptimalEL Regular", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.experts-text p {
+  width: 86%;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+}
+
+.experts-team {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  flex-shrink: 0;
+  scroll-behavior: smooth;
+  scrollbar-color: var(--ng-light-gray) var(--disable-gray);
+  padding-bottom: 8px;
+}
+
+.experts-team .expert-card:nth-child(even){
+    flex-direction: column-reverse;
+}
