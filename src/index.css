@@ -26,6 +26,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button{
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
@@ -42,9 +46,11 @@ li {
 
 :root {
   --light-yellow: rgb(227, 195, 122);
+  --gold-yellow: rgba(164, 131, 78, 1);
   --disable-gray: rgba(177, 177, 177, 1);
   --border-color: rgb(137, 130, 140);
   --title-color: rgba(255, 255, 255, 0.25);
   --bg-gray: rgba(217, 217, 217, 1);
   --text-dark: 35, 34, 40;
+  --ng-light-gray: rgba(246, 244, 245, 1);
 }

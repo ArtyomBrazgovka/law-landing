@@ -1,14 +1,10 @@
 import "./HeroContent.css";
-
 import "./BlockNumber/BlockNumber.jsx";
 import {BlockNumber} from "./BlockNumber/BlockNumber.jsx";
-
-import statue from "/images/decorations/statue.webp";
-
-import lists from "/images/decorations/lists.webp";
-
 import {Button} from "../../Button/Button.jsx";
 import {PhoneInput} from "../../PhoneInput/PhoneInput.jsx";
+import statue from "/images/decorations/statue.webp";
+import lists from "/images/decorations/lists.webp";
 
 export function HeroContent() {
   return (
