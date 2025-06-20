@@ -5,9 +5,9 @@ export function Tiles(props) {
   return (
     <div className="tiles">
       <div className="tiles-container">
-        <img class="tiles-icon" src={source} alt="иконка"></img>
-        <h3 class="tiles-title">{title}</h3>
-        <p class="tiles-description">{description}</p>
+        <img className="tiles-icon" src={source} alt="иконка"></img>
+        <h3 className="tiles-title">{title}</h3>
+        <p className="tiles-description">{description}</p>
       </div>
     </div>
   );
