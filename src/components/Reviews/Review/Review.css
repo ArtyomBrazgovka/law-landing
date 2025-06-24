@@ -1,0 +1,45 @@
+.review-desciption {
+  font-size: 14px;
+  color: var(--disable-gray);
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.review-name {
+  font-size: 16px;
+  font-family: "Optimal Regular", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: rgb(var(--text-dark));
+}
+
+.review-text {
+  font-size: 16px;
+  font: Montserrat, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.review-photo {
+  position: absolute;
+  z-index: 3;
+  top: -54px;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background-color: rgb(86, 86, 86);
+  object-fit: contain;
+}
+
+.review-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}

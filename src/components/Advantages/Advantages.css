@@ -2,7 +2,7 @@
   width: 100%;
   height: 624px;
   padding: 80px 70px;
-  background-image: url(/images/backgrouns/scales.webp);
+  background-image: url("/images/backgrounds/scales.webp");
   background-repeat: no-repeat;
   background-position: right;
 }

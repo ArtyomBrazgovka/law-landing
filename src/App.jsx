@@ -4,6 +4,7 @@ import {Director} from "./components/Director/Director.jsx";
 import {Advantages} from "./components/Advantages/Advantages.jsx";
 import {Experts} from "./components/Experts/Experts.jsx";
 import { Companies } from "./components/Companies/Companies.jsx";
+import { Reviews } from "./components/Reviews/Reviews.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Advantages />
       <Experts />
       <Companies />
+      <Reviews />
     </div>
   );
 }
