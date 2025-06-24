@@ -5,6 +5,7 @@ import {Advantages} from "./components/Advantages/Advantages.jsx";
 import {Experts} from "./components/Experts/Experts.jsx";
 import { Companies } from "./components/Companies/Companies.jsx";
 import { Reviews } from "./components/Reviews/Reviews.jsx";
+import { Articles } from "./components/Articles/Articles.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Experts />
       <Companies />
       <Reviews />
+      <Articles />
     </div>
   );
 }

@@ -1,0 +1,40 @@
+.article{
+    flex: 1 1 auto;
+   
+    position: relative;
+}
+
+.article-img{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    z-index: 0;
+    
+}
+
+.article-info{
+    position: absolute;
+    
+    z-index: 1;
+    top: 66%;
+    left: 6%;
+    bottom: 2%;
+    right: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article-date{
+    font-size: 14px;
+  color: var(--disable-gray);
+}
+
+.article-title{
+   
+   font-size: 16px;
+  font-family: "Optimal Regular", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: rgb(var(--text-dark));
+}

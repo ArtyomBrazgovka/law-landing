@@ -1,6 +1,6 @@
 .button {
-  width: 250px;
-  height: 43px;
+  width: fit-content;
+  height: fit-content;
   padding: 12px 24px;
   border: 1px solid var(--light-yellow);
   background-color: transparent;
