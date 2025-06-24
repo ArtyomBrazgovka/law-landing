@@ -49,7 +49,6 @@ export function Reviews() {
           {reviewsData.map((_, index) => (
             <button
               key={index}
-              style={{transform: `translateX(-${index * 100}%)`}}
               className={clsx("reviews-dot", {
                 active: index === currentReviewIndex,
               })}
