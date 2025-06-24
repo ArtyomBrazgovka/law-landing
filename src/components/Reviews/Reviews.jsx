@@ -46,13 +46,13 @@ export function Reviews() {
           </button>
         </div>
         <div className="reviews-buttons">
-          {reviewsData.map((_, index) => (
+          {reviewsData.map(({id}) => (
             <button
-              key={index}
+              key={id}
               className={clsx("reviews-dot", {
-                active: index === currentReviewIndex,
+                active: id === reviewsData[currentReviewIndex].id,
               })}
-              onClick={() => setCurrentReviewIndex(index)}
+              onClick={() => setCurrentReviewIndex(id)}
             />
           ))}
         </div>
