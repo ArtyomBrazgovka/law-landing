@@ -1,10 +1,10 @@
 import "./Articles.css";
 import {Button} from "../Button/Button";
-import { Article } from "./Article/Article";
-import firstArticle from "/images/backgrounds/first-article.webp"
-import secondArticle from "/images/backgrounds/second-article.webp"
-import thirdArticle from "/images/backgrounds/third-article.webp"
-import fourthArticle from "/images/backgrounds/fourth-article.webp"
+import {Article} from "./Article/Article";
+import firstArticle from "/images/backgrounds/first-article.webp";
+import secondArticle from "/images/backgrounds/second-article.webp";
+import thirdArticle from "/images/backgrounds/third-article.webp";
+import fourthArticle from "/images/backgrounds/fourth-article.webp";
 
 export function Articles() {
   return (
@@ -23,10 +23,27 @@ export function Articles() {
           <Button className="articles-button">Читать больше</Button>
         </div>
         <div className="articles-content">
-            <Article source={firstArticle} date="15 апреля" title={"Как использовать закон \nв свою пользу?"} color="white"/>
-            <Article source={secondArticle} date="09 апреля" title={"библиотека юриста. \nЧто почитать?"}/>
-            <Article source={thirdArticle} date="06 марта" title={"на что обратить внимание \nв документах?"}/>
-            <Article source={fourthArticle} date="23 февраля" title={"залог успешных дел наших \nюристов?"}/>
+          <Article
+            source={firstArticle}
+            date="15 апреля"
+            title={"Как использовать закон \nв свою пользу?"}
+            color="white"
+          />
+          <Article
+            source={secondArticle}
+            date="09 апреля"
+            title={"библиотека юриста. \nЧто почитать?"}
+          />
+          <Article
+            source={thirdArticle}
+            date="06 марта"
+            title={"на что обратить внимание \nв документах?"}
+          />
+          <Article
+            source={fourthArticle}
+            date="23 февраля"
+            title={"залог успешных дел наших \nюристов?"}
+          />
         </div>
       </div>
     </div>

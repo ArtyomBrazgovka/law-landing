@@ -1,22 +1,18 @@
-.articles-section{
-    
-    height: 720px;
-  
-    padding: 80px 70px;
+.articles-section {
+  height: 720px;
+  padding: 80px 70px;
 }
 
-.articles-container{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
- 
+.articles-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  height: 100%;
 }
 
-.articles-top{
-   display: flex;
-   justify-content: space-between;
-
+.articles-top {
+  display: flex;
+  justify-content: space-between;
 }
 
 .articles-title {
@@ -61,10 +57,10 @@
   font-weight: 400;
 }
 
-.articles-content{
-    margin-left: 20px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 2%;
+.articles-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  margin-left: 20px;
+  height: 100%;
 }
