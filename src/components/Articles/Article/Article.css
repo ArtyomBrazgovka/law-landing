@@ -13,9 +13,9 @@
 .article-info {
   position: absolute;
   z-index: 1;
-  top: 66%;
+  top: 64%;
   left: 6%;
-  bottom: 2%;
+  bottom: 6%;
   right: 8%;
   display: flex;
   flex-direction: column;
@@ -33,4 +33,5 @@
   font-weight: 200;
   text-transform: uppercase;
   color: rgb(var(--text-dark));
+  
 }
