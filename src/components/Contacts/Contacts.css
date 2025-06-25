@@ -76,7 +76,7 @@
 .request-form {
   display: flex;
   gap: 8px;
-  height: 70%;
+  height: 50%;
 }
 
 .request-title {

@@ -1,5 +1,6 @@
 .input {
-  width: 56%;
+  width: fit-content;
+  height: fit-content;
   flex: 1 1 auto;
   font-size: 14px;
   font-family: Montserrat, sans-serif;
