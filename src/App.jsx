@@ -8,6 +8,7 @@ import { Reviews } from "./components/Reviews/Reviews.jsx";
 import { Articles } from "./components/Articles/Articles.jsx";
 import { Subscribe } from "./components/Subscribe/Subscribe.jsx";
 import { Contacts } from "./components/Contacts/Contacts.jsx";
+import { Footer } from "./components/Footer/Footer.jsx";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Articles />
       <Subscribe />
       <Contacts />
+      <Footer />
     </div>
   );
 }
