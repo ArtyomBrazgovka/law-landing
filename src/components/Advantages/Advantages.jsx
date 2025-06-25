@@ -7,6 +7,7 @@ import chess from "/images/icons/chess.webp";
 import book from "/images/icons/book.webp";
 
 export function Advantages() {
+  
   return (
     <div className="advantages-section">
       <div className="advantages-container">
