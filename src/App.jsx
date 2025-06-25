@@ -6,6 +6,7 @@ import {Experts} from "./components/Experts/Experts.jsx";
 import { Companies } from "./components/Companies/Companies.jsx";
 import { Reviews } from "./components/Reviews/Reviews.jsx";
 import { Articles } from "./components/Articles/Articles.jsx";
+import { Subscribe } from "./components/Subscribe/Subscribe.jsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Companies />
       <Reviews />
       <Articles />
+      <Subscribe />
     </div>
   );
 }

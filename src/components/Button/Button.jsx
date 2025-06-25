@@ -1,7 +1,6 @@
 import "./Button.css";
 
-export function Button(props) {
-  const {children, color = "black"} = props;
+export function Button({children, color = "black"}) {
   return (
     <button style={{color: color}} className="button">
       {children}

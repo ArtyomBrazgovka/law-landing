@@ -1,6 +1,8 @@
 .input {
   width: 56%;
+  flex: 1 1 auto;
   font-size: 14px;
   font-family: Montserrat, sans-serif;
+  padding: 14px 78px 12px 12px;
   color: var(--disable-gray);
 }

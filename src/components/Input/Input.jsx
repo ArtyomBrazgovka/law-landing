@@ -10,6 +10,7 @@ export function Input(props) {
       className="input"
       ref={ref}
       required
+      {...props}
     ></input>
   );
 }

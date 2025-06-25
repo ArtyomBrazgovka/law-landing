@@ -1,0 +1,52 @@
+.subscribe {
+  height: 400px;
+  background-color: var(--ng-light-gray);
+}
+
+.subscribe-container {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 80px auto;
+}
+
+.subscribe-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.subscribe-headline {
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  color: var(--disable-gray);
+}
+
+.subscribe-subtitle {
+  font-size: 40px;
+  font-family: "Optimal Regular", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgb(var(--text-dark));
+}
+
+.subscribe-text {
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 200;
+  color: var(--text-dark);
+  margin: 0 auto;
+}
+
+.subscribe-form {
+  margin: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+}
