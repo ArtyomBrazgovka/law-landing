@@ -1,0 +1,101 @@
+.contacts {
+  display: flex;
+  height: 480px;
+}
+
+.contacts-map {
+  object-fit: cover;
+  width: 40%;
+}
+
+.contacts-content {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(var(--text-dark));
+  background-image: url("/images/backgrounds/contacts-background.webp");
+  padding: 80px;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  left: 0;
+}
+
+.contacts-headline {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-headline div {
+  width: 10%;
+  height: 1px;
+  background-color: var(--disable-gray);
+}
+
+.contacts-headline p {
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  color: var(--disable-gray);
+}
+
+.contacts-subtitle {
+  width: 86%;
+  font-size: 40px;
+  font-family: "OptimalEL Regular", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white;
+}
+
+.contacts-text p {
+  width: 86%;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+}
+
+.contacts-request {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-right: 150px;
+}
+
+.request-form {
+  display: flex;
+  gap: 8px;
+  height: 70%;
+}
+
+.request-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Optimal Regular", sans-serif;
+  color: white;
+}
+
+.contacts-info {
+  display: flex;
+  gap: 10%;
+  flex-wrap: wrap;
+  height: 30%;
+  width: 60%;
+}
+
+.contacts-info p {
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  color: white;
+}
