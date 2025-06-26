@@ -16,10 +16,7 @@ export function PopUpRequest({active, setActive}) {
           </h2>
           <div className="pop-up-inputs">
             <NameInput placeholder="Ваше имя" />
-            <PhoneInput
-              mask="+{7} (000) 000-00-00"
-              definitions={{0: /[0-9]/}}
-            />
+            <PhoneInput />
             <EmailInput placeholder="Ваш e-mail" />
           </div>
           <Button>Отправить</Button>

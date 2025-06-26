@@ -1,35 +1,33 @@
 import "./Modal.css";
 import clsx from "clsx";
-import {useEffect} from "react";
 
 export function Modal({active, setActive, children}) {
-  useEffect(() => {
-    const handleKeyPress = (e) => {
-      if (e.key === "Escape") {
-        setActive(false);
-      }
-    };
-
-    if (active) {
-      window.addEventListener("keydown", handleKeyPress);
+  if (active) {
+    document.body.style.overflow = "hidden";
+    document.body.style.paddingRight = "15px";
+  } else {
+    document.body.style.overflow = "";
+    document.body.style.paddingRight = "";
+  }
+  const handleKeyPress = (e) => {
+    if (e.key === "Escape") {
+      setActive(false);
     }
+  };
 
-    return () => {
-      window.removeEventListener("keydown", handleKeyPress);
-    };
-  }),
-    [active, setActive];
   return (
     <div
       className={clsx("modal", {active: active == true})}
       onClick={() => setActive(false)}
+      onKeyDown={handleKeyPress}
+      tabIndex={0}
     >
       <div
         className={clsx("modal-container", {active: active == true})}
         onClick={(e) => e.stopPropagation()}
       >
         <button className="modal-close" onClick={() => setActive(false)}>
-          x
+          <span className="modal-close-icon" />
         </button>
         {children}
       </div>
