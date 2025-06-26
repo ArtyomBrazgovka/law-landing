@@ -17,7 +17,8 @@
 .modal-container {
   transform: scale(0.5);
   transition: 0.4s all;
-  width: 50vw;
+  width: 70vw;
+  max-height: 80vh;
   padding: 24px;
   background-color: white;
 }
@@ -29,4 +30,15 @@
 
 .modal-container.active {
   transform: scale(1);
+}
+
+.modal-close {
+  position: absolute;
+  border: none;
+  top: -20px;
+  right: -20px;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--disable-gray);
 }

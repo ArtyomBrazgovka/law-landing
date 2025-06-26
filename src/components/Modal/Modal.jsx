@@ -28,6 +28,9 @@ export function Modal({active, setActive, children}) {
         className={clsx("modal-container", {active: active == true})}
         onClick={(e) => e.stopPropagation()}
       >
+        <button className="modal-close" onClick={() => setActive(false)}>
+          x
+        </button>
         {children}
       </div>
     </div>

@@ -71,6 +71,7 @@
   flex-direction: column;
   gap: 8px;
   margin-right: 150px;
+  width: 90%;
 }
 
 .request-form {
