@@ -22,13 +22,13 @@ export function Modal({isActive, setActive, children}) {
 
   return (
     <div
-      className={clsx("modal", {active: isActive == true})}
+      className={clsx("modal", {active: isActive === true})}
       onClick={() => setActive(false)}
       onKeyDown={handleKeyPress}
       tabIndex={0}
     >
       <div
-        className={clsx("modal-container", {active: isActive == true})}
+        className={clsx("modal-container", {active: isActive === true})}
         onClick={(e) => e.stopPropagation()}
       >
         <button className="modal-close" onClick={() => setActive(false)}>

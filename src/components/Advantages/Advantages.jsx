@@ -10,7 +10,7 @@ import { PopUpRequest } from "../PopUpRequest/PopUpRequest.jsx";
 
 
 export function Advantages() {
-  const[modalActive, setModalActive] = useState(false);
+  const[isModalActive, setModalActive] = useState(false);
   return (
     <div className="advantages-section">
       <div className="advantages-container">
@@ -52,7 +52,7 @@ export function Advantages() {
         </div>
         <Button onClick={()=>setModalActive(true)}>Заказать звонок</Button>
       </div>
-      <PopUpRequest active={modalActive} setActive={setModalActive} />
+      <PopUpRequest isPopActive={isModalActive} setActive={setModalActive} />
     </div>
   );
 }
