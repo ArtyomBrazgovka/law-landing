@@ -4,10 +4,11 @@ import {Button} from "../Button/Button";
 import {PhoneInput} from "../PhoneInput/PhoneInput";
 import {EmailInput} from "../EmailInput/EmailInput";
 import {NameInput} from "../NameInput/NameInput";
+import PropTypes from "prop-types";
 
-export function PopUpRequest({active, setActive}) {
+export function PopUpRequest({isActive, setActive}) {
   return (
-    <Modal active={active} setActive={setActive}>
+    <Modal active={isActive} setActive={setActive}>
       <div className="pop-up-container">
         <form className="pop-up-content">
           <h2 className="pop-up-title">
@@ -25,3 +26,8 @@ export function PopUpRequest({active, setActive}) {
     </Modal>
   );
 }
+
+PopUpRequest.propTypes = {
+  isActive: PropTypes.bool.isRequired,
+  setActive: PropTypes.func.isRequired,
+};

@@ -1,4 +1,5 @@
 import "./Tiles.css";
+import PropTypes from "prop-types";
 
 export function Tiles(props) {
   const {source, title, description} = props;
@@ -12,3 +13,9 @@ export function Tiles(props) {
     </div>
   );
 }
+
+Tiles.propTypes = {
+  source: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};

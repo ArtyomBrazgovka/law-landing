@@ -1,5 +1,6 @@
 import "./Button.css";
 import clsx from "clsx";
+import PropTypes from "prop-types";
 
 export function Button({children, color = "black", className, ...props}) {
   return (
@@ -8,3 +9,9 @@ export function Button({children, color = "black", className, ...props}) {
     </button>
   );
 }
+
+Button.propTypes = {
+  children: PropTypes.node,
+  color: PropTypes.string,
+  className: PropTypes.string,
+};

@@ -1,13 +1,14 @@
 import { Input } from "./../Input/Input.jsx";
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 export function NameInput(props) {
-    const [error, setError] = useState(null);
+    const [error, setError] = useState("");
 
     const validateName = (name) => {
         if (name.length < 2) return "Имя слишком короткое";
         if (name.length > 50) return "Имя слишком длинное";
-        return null;
+        return "";
     };
 
     const handleChange = (e) => {
@@ -25,3 +26,8 @@ export function NameInput(props) {
         />
     );
 }
+
+NameInput.propTypes = {
+  onChange: PropTypes.func.isRequired,
+  error: PropTypes.string.isRequired,
+};

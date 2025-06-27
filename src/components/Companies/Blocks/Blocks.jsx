@@ -1,4 +1,5 @@
 import "./Blocks.css";
+import PropTypes from 'prop-types';
 
 export function Blocks(props) {
   const {source, title} = props;
@@ -10,4 +11,9 @@ export function Blocks(props) {
       </div>
     </div>
   );
+}
+
+Blocks.propTypes = {
+  source: PropTypes.string,
+  title: PropTypes.string,
 }

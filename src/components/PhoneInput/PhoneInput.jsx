@@ -1,10 +1,11 @@
 import {Input} from "./../Input/Input.jsx";
-import {useEffect, useRef} from "react"
+import {useEffect, useRef} from "react";
 import IMask from "imask";
+import PropTypes from "prop-types";
 
 export function PhoneInput(props) {
-    const inputRef = useRef(null);
-    const {mask="+{7} (000) 000-00-00", definitions={0: /[0-9]/}} = props;
+  const inputRef = useRef(null);
+  const {mask = "+{7} (000) 000-00-00", definitions = {0: /[0-9]/}} = props;
 
   useEffect(() => {
     if (inputRef.current && mask) {
@@ -18,12 +19,11 @@ export function PhoneInput(props) {
         maskInstance.destroy();
       };
     }
-  }, 
-  [mask, definitions]);
-  return (
-    <Input
-      type="tel"
-      ref={inputRef}
-    ></Input>
-  );
+  }, [mask, definitions]);
+  return <Input type="tel" ref={inputRef}></Input>;
 }
+
+PhoneInput.propTypes = {
+  mask: PropTypes.string,
+  definitions: PropTypes.object,
+};
