@@ -1,9 +1,15 @@
 .input {
-  width: 60%;
+  width: clamp(200px, 60%, 500px);
+  min-width: 150px;
   height: fit-content;
   flex: 1 1 auto;
-  font-size: 14px;
+  font-size: clamp(0.75rem, 0.5rem + 0.6667vw, 0.875rem);
   font-family: Montserrat, sans-serif;
-  padding: 14px 78px 12px 12px;
+  padding: clamp(8px, 1.5vw, 14px) clamp(12px, 5vw, 78px) clamp(6px, 1vw, 12px)
+    clamp(8px, 2vw, 12px);
   color: var(--disable-gray);
+  border: 1px solid var(--border-color);
+  background-color: white;
+  transition: all 0.3s ease;
 }
+
