@@ -1,7 +1,6 @@
 import "./Modal.css";
 import clsx from "clsx";
 import {useEffect} from "react";
-import PropTypes from 'prop-types';
 
 export function Modal({isActive, setActive, children}) {
   useEffect(() => {
@@ -39,10 +38,4 @@ export function Modal({isActive, setActive, children}) {
       </div>
     </div>
   );
-}
-
-Modal.propTypes = {
-    isActive: PropTypes.bool.isRequired,
-    setActive: PropTypes.func.isRequired,
-    children: PropTypes.node,
 }

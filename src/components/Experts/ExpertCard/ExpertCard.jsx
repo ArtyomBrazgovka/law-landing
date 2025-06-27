@@ -1,5 +1,4 @@
 import "./ExpertCard.css";
-import PropTypes from 'prop-types';
 
 export function ExpertCard({source, name, experience}) {
   return (
@@ -11,10 +10,4 @@ export function ExpertCard({source, name, experience}) {
       </div>
     </div>
   );
-}
-
-ExpertCard.propTypes = {
-  source: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  experience: PropTypes.string.isRequired,
 }

@@ -1,6 +1,5 @@
 import { Input } from "./../Input/Input.jsx";
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 
 export function NameInput(props) {
     const [error, setError] = useState("");
@@ -27,7 +26,3 @@ export function NameInput(props) {
     );
 }
 
-NameInput.propTypes = {
-  onChange: PropTypes.func.isRequired,
-  error: PropTypes.string.isRequired,
-};

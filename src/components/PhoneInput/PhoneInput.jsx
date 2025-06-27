@@ -1,7 +1,6 @@
 import {Input} from "./../Input/Input.jsx";
 import {useEffect, useRef} from "react";
 import IMask from "imask";
-import PropTypes from "prop-types";
 
 export function PhoneInput(props) {
   const inputRef = useRef(null);
@@ -22,8 +21,3 @@ export function PhoneInput(props) {
   }, [mask, definitions]);
   return <Input type="tel" ref={inputRef}></Input>;
 }
-
-PhoneInput.propTypes = {
-  mask: PropTypes.string,
-  definitions: PropTypes.object,
-};

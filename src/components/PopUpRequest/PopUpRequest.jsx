@@ -4,7 +4,6 @@ import {Button} from "../Button/Button";
 import {PhoneInput} from "../PhoneInput/PhoneInput";
 import {EmailInput} from "../EmailInput/EmailInput";
 import {NameInput} from "../NameInput/NameInput";
-import PropTypes from "prop-types";
 
 export function PopUpRequest({isActive, setActive}) {
   return (
@@ -27,7 +26,3 @@ export function PopUpRequest({isActive, setActive}) {
   );
 }
 
-PopUpRequest.propTypes = {
-  isActive: PropTypes.bool.isRequired,
-  setActive: PropTypes.func.isRequired,
-};

@@ -1,6 +1,5 @@
 import "./Article.css";
 import {Button} from "../../Button/Button";
-import PropTypes from "prop-types";
 
 export function Article({source, date, title, color}) {
   return (
@@ -16,10 +15,3 @@ export function Article({source, date, title, color}) {
     </article>
   );
 }
-
-Article.propTypes = {
-  source: PropTypes.string,
-  date: PropTypes.string,
-  title: PropTypes.string,
-  color: PropTypes.string,
-};
