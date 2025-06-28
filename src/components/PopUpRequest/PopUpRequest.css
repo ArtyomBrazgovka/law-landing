@@ -1,7 +1,6 @@
 .pop-up-container {
   border: 2px solid var(--gold-yellow);
   padding: clamp(30px, 8vw, 60px) clamp(20px, 15vw, 150px);
-  max-width: 100%;
 }
 
 .pop-up-content {
