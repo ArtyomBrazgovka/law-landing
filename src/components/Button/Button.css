@@ -8,4 +8,11 @@
   white-space: nowrap;
   text-transform: uppercase;
   font-family: "Optimal Regular", sans-serif;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px var(--disable-gray);
+  border: 1px solid var(--light-yellow);
 }

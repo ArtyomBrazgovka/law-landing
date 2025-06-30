@@ -6,7 +6,7 @@ export function Modal({isActive, setIsActive, children}) {
   useEffect(() => {
     if (isActive) {
       document.body.style.overflow = "hidden";
-      document.body.style.paddingRight = "15px";
+      document.body.style.paddingRight = "1rem";
     }
     return () => {
       document.body.style.overflow = "";
