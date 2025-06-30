@@ -52,7 +52,7 @@ export function Advantages() {
         </div>
         <Button onClick={()=>setIsModalActive(true)}>Заказать звонок</Button>
       </div>
-      <PopUpRequest isPopActive={isModalActive} setIsActive={setIsModalActive} />
+      <PopUpRequest isPopActive={isModalActive} setIsPopActive={setIsModalActive} />
     </div>
   );
 }
