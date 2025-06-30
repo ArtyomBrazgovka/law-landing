@@ -12,8 +12,3 @@ export function Blocks(props) {
     </div>
   );
 }
-
-Blocks.propTypes = {
-  source: PropTypes.string,
-  title: PropTypes.string,
-}
