@@ -5,9 +5,9 @@ import {PhoneInput} from "../PhoneInput/PhoneInput";
 import {EmailInput} from "../EmailInput/EmailInput";
 import {NameInput} from "../NameInput/NameInput";
 
-export function PopUpRequest({isPopActive, setActive}) {
+export function PopUpRequest({isPopActive, setIsActive}) {
   return (
-    <Modal isActive={isPopActive} setActive={setActive}>
+    <Modal isActive={isPopActive} setIsActive={setIsActive}>
       <div className="pop-up-container">
         <form className="pop-up-content">
           <h2 className="pop-up-title">

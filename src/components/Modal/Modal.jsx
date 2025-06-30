@@ -2,7 +2,7 @@ import "./Modal.css";
 import clsx from "clsx";
 import {useEffect} from "react";
 
-export function Modal({isActive, setActive, children}) {
+export function Modal({isActive, setIsActive, children}) {
   useEffect(() => {
     if (isActive) {
       document.body.style.overflow = "hidden";
@@ -14,24 +14,24 @@ export function Modal({isActive, setActive, children}) {
     };
   }, [isActive]);
 
-  const handleKeyPress = (e) => {
+  const handleKeyDown = (e) => {
     if (e.key === "Escape") {
-      setActive(false);
+      setIsActive(false);
     }
   };
 
   return (
     <div
-      className={clsx("modal", {active: isActive === true})}
-      onClick={() => setActive(false)}
-      onKeyDown={handleKeyPress}
+      className={clsx("modal", {active: isActive == true})}
+      onClick={() => setIsActive(false)}
+      onKeyDown={handleKeyDown}
       tabIndex={0}
     >
       <div
-        className={clsx("modal-container", {active: isActive === true})}
+        className={clsx("modal-container", {active: isActive == true})}
         onClick={(e) => e.stopPropagation()}
       >
-        <button className="modal-close" onClick={() => setActive(false)}>
+        <button className="modal-close" onClick={() => setIsActive(false)}>
           <span className="modal-close-icon" />
         </button>
         {children}
