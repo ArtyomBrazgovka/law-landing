@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 5vh;
   margin: clamp(2.5rem, 5vw, 5rem) auto;
 }
 
@@ -31,7 +31,7 @@
 
 .subscribe-subtitle {
   font-size: clamp(1.4rem, 0.5rem + 1.6667vw, 2.5rem);
-  font-family: "Optimal Regular", sans-serif;
+  font-family: "OptimalEl Regular", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;

@@ -45,7 +45,7 @@
 .contacts-headline {
   display: flex;
   align-items: center;
-  gap: 2%;
+  gap: 1vw;
 }
 
 .contacts-headline div {
@@ -109,7 +109,7 @@
 .contacts-info p {
   flex: 1 1 calc(50% - 3vw);
   font-size: clamp(0.75rem, 0.5rem + 0.6667vw, 1rem);
-  font-family: Montserrat, sans-serif;
+  font-family: "Optimal Regular", sans-serif;
   color: white;
   white-space: nowrap;
 }

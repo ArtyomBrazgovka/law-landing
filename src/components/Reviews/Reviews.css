@@ -26,8 +26,8 @@
 }
 
 .reviews-subtitle {
-  font-size: 40px;
-  font-family: "Optimal Regular", sans-serif;
+  font-size: clamp(1.4rem, 0.5rem + 1.6667vw, 2.5rem);
+  font-family: "OptimalEl Regular", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   color: rgb(var(--text-dark));

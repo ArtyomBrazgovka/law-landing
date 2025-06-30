@@ -24,7 +24,7 @@
   font-size: 56px;
   font-family: "OptimalEL Regular", sans-serif;
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .lower-title {
@@ -44,7 +44,7 @@
   position: absolute;
   top: 376px;
   left: 92px;
-  width: 42%;
+  width: 43%;
   height: 86px;
   display: flex;
   flex-direction: column;
