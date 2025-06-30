@@ -16,7 +16,6 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 30px 0;
-  width: 36%;
 }
 
 .experts-team {
@@ -73,6 +72,6 @@
   padding-bottom: 8px;
 }
 
-.experts-team .expert-card:nth-child(even){
-    flex-direction: column-reverse;
+.experts-team .expert-card:nth-child(even) {
+  flex-direction: column-reverse;
 }

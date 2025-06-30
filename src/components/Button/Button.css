@@ -1,12 +1,11 @@
 .button {
   width: fit-content;
   height: fit-content;
-  padding: 
-  clamp(8px, 0.5rem + 0.5vw, 12px) 
-  clamp(16px, 1rem + 1vw, 24px);
+  padding: clamp(8px, 1.5vw, 14px) clamp(16px, 1rem + 1vw, 24px);
   border: 1px solid var(--light-yellow);
   background-color: transparent;
   font-size: clamp(0.75rem, 0.5rem + 0.6667vw, 0.875rem);
+  white-space: nowrap;
   text-transform: uppercase;
   font-family: "Optimal Regular", sans-serif;
 }

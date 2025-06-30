@@ -1,33 +1,43 @@
 .contacts {
   display: flex;
-  height: 480px;
+  height: fit-content;
+  @media (max-width: 1280px) {
+    flex-direction: column;
+  }
 }
 
 .contacts-map {
-  object-fit: cover;
+  object-fit: fill;
   width: 40%;
+  @media (max-width: 1280px) {
+    width: 100%;
+    height: 50%;
+    max-height: 200px;
+    object-fit: cover;
+  }
 }
 
 .contacts-content {
-  width: 100%;
-  height: 100%;
+  width: 60%;
   background-color: rgb(var(--text-dark));
   background-image: url("/images/backgrounds/contacts-background.webp");
   padding: 80px;
+  @media (max-width: 1280px) {
+    width: 100%;
+    height: 50%;
+  }
 }
 
 .contacts-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
+  gap: 6vh;
 }
 
 .contacts-title {
   display: flex;
+  gap: 4vh;
   flex-direction: column;
-  justify-content: space-between;
   width: 90%;
   left: 0;
 }
@@ -35,6 +45,7 @@
 .contacts-headline {
   display: flex;
   align-items: center;
+  gap: 2%;
 }
 
 .contacts-headline div {
@@ -44,7 +55,7 @@
 }
 
 .contacts-headline p {
-  font-size: 16px;
+  font-size: clamp(0.75rem, 0.5rem + 0.6667vw, 1rem);
   font-family: Montserrat, sans-serif;
   font-weight: 300;
   color: var(--disable-gray);
@@ -52,36 +63,37 @@
 
 .contacts-subtitle {
   width: 86%;
-  font-size: 40px;
+  font-size: clamp(1.4rem, 0.5rem + 1.6667vw, 2.5rem);
   font-family: "OptimalEL Regular", sans-serif;
   font-weight: 100;
   text-transform: uppercase;
+  line-height: 1.2;
+  white-space: nowrap;
   color: white;
 }
 
 .contacts-text p {
   width: 86%;
-  font-size: 16px;
+  font-size: clamp(0.75rem, 0.5rem + 0.6667vw, 1rem);
   font-family: Montserrat, sans-serif;
   font-weight: 400;
 }
 
 .contacts-request {
   display: flex;
+  gap: 1vw;
   flex-direction: column;
-  gap: 8px;
-  margin-right: 150px;
-  width: 90%;
+  justify-content: space-between;
+  margin-right: 14vw;
 }
 
 .request-form {
   display: flex;
-  gap: 8px;
+  gap: 0.5vw;
   height: 50%;
 }
 
 .request-title {
-  font-size: 16px;
   text-transform: uppercase;
   font-family: "Optimal Regular", sans-serif;
   color: white;
@@ -89,14 +101,15 @@
 
 .contacts-info {
   display: flex;
-  gap: 10%;
+  gap: 2vw;
   flex-wrap: wrap;
-  height: 30%;
-  width: 60%;
+  width: 80%;
 }
 
 .contacts-info p {
-  font-size: 16px;
+  flex: 1 1 calc(50% - 3vw);
+  font-size: clamp(0.75rem, 0.5rem + 0.6667vw, 1rem);
   font-family: Montserrat, sans-serif;
   color: white;
+  white-space: nowrap;
 }
