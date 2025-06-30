@@ -44,7 +44,7 @@
   position: absolute;
   top: 376px;
   left: 92px;
-  width: 40%;
+  width: 42%;
   height: 86px;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@
 .request-form {
   display: flex;
   gap: 8px;
-  margin-right: 116px;
+  margin-right: 100px;
   height: 50%;
 }
 

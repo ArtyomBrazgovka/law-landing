@@ -1,8 +1,9 @@
 import "./Button.css";
+import clsx from "clsx";
 
-export function Button({children, color = "black"}) {
+export function Button({children, color = "black", className, ...props}) {
   return (
-    <button style={{color: color}} className="button">
+    <button {...props} style={{color}} className={clsx("button", className)}>
       {children}
     </button>
   );

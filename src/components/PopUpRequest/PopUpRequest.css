@@ -1,0 +1,31 @@
+.pop-up-container {
+  border: 2px solid var(--gold-yellow);
+  padding: clamp(30px, 8vw, 60px) clamp(20px, 15vw, 150px);
+}
+
+.pop-up-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(20px, 4vw, 40px);
+  padding: 0 clamp(10px, 3vw, 20px);
+}
+
+.pop-up-title {
+  font-size: clamp(1rem, 0.5rem + 1.6667vw, 2.5rem);
+  font-family: "OptimalEL Regular", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.pop-up-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(12px, 2vw, 24px);
+  width: 100%;
+  max-width: 500px;
+}
+

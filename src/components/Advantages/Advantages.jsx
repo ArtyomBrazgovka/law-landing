@@ -5,8 +5,12 @@ import clock from "/images/icons/clock.webp";
 import briefcase from "/images/icons/briefcase.webp";
 import chess from "/images/icons/chess.webp";
 import book from "/images/icons/book.webp";
+import { useState } from "react";
+import { PopUpRequest } from "../PopUpRequest/PopUpRequest.jsx";
+
 
 export function Advantages() {
+  const[isModalActive, setIsModalActive] = useState(false);
   return (
     <div className="advantages-section">
       <div className="advantages-container">
@@ -46,8 +50,9 @@ export function Advantages() {
             }
           />
         </div>
-        <Button>Заказать звонок</Button>
+        <Button onClick={()=>setIsModalActive(true)}>Заказать звонок</Button>
       </div>
+      <PopUpRequest isPopActive={isModalActive} setIsPopActive={setIsModalActive} />
     </div>
   );
 }

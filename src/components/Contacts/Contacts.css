@@ -71,12 +71,13 @@
   flex-direction: column;
   gap: 8px;
   margin-right: 150px;
+  width: 90%;
 }
 
 .request-form {
   display: flex;
   gap: 8px;
-  height: 70%;
+  height: 50%;
 }
 
 .request-title {
