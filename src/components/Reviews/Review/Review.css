@@ -1,5 +1,5 @@
 .review-desciption {
-  font-size: 14px;
+  font-size: clamp(0.65rem, 0.5rem + 0.6667vw, 1rem);;
   color: var(--disable-gray);
 }
 
@@ -7,11 +7,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 4vh;
 }
 
 .review-name {
-  font-size: 16px;
+  font-size: clamp(0.75rem, 0.5rem + 0.6667vw, 1rem);;
   font-family: "Optimal Regular", sans-serif;
   font-weight: 200;
   text-transform: uppercase;
@@ -19,7 +19,7 @@
 }
 
 .review-text {
-  font-size: 16px;
+  font-size: clamp(0.75rem, 0.5rem + 0.6667vw, 1rem);;
   font: Montserrat, sans-serif;
   font-weight: 300;
   font-style: italic;
@@ -41,5 +41,5 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }

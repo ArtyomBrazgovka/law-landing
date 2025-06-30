@@ -84,11 +84,48 @@
 
 .reviews-left-arrow,
 .reviews-right-arrow {
+  position: relative;
   width: 48px;
   height: 48px;
   border: 0;
   background-color: var(--gold-yellow);
-  color: white;
+  cursor: pointer;
+}
+
+.reviews-left-arrow::before,
+.reviews-right-arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 2px;
+  background: white;
+  transform: translate(-50%, -50%);
+}
+
+.reviews-left-arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: translate(0, -50%) rotate(45deg);
+}
+
+.reviews-right-arrow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 35%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  transform: translate(0, -50%) rotate(45deg);
 }
 
 .reviews-first-quote,
@@ -96,7 +133,7 @@
   position: absolute;
   width: 70px;
   height: 192px;
-  font-size: 128px;
+  font-size: clamp(4rem, 2.6667rem + 4.4444vw, 8rem);
   font-family: Kornilow, sans-serif;
   font-weight: 100;
   color: var(--bg-gray);
@@ -104,11 +141,11 @@
 
 .reviews-first-quote {
   left: 8%;
-  top: 86%;
+  top: 82%;
 }
 
 .reviews-second-quote {
-  top: -36%;
+  top: -32%;
   left: 84%;
 }
 
