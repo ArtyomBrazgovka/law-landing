@@ -1,5 +1,5 @@
 .reviews-section {
-  height: 750px;
+  height: fit-content;
   padding: 80px 70px;
   background-color: var(--ng-light-gray);
 }
@@ -76,10 +76,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 320px;
+  height: 50vh;
   width: 100%;
-  padding: 88px 106px 80px;
+  padding: 6vh 40vh 4vh;
   background-color: white;
+  @media (max-width: 1280px) {
+    height: 100vh;
+  }
+  @media (max-height: 600px) {
+    height: 100vh;
+    padding: 6vh 20vh 4vh;
+  }
 }
 
 .reviews-left-arrow,
@@ -140,13 +147,13 @@
 }
 
 .reviews-first-quote {
-  left: 8%;
-  top: 82%;
+  left: 4vw;
+  top: 42vh;
 }
 
 .reviews-second-quote {
-  top: -32%;
-  left: 84%;
+  top: -15vh;
+  left: 52vw;
 }
 
 .reviews-buttons {
