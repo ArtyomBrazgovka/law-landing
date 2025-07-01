@@ -29,7 +29,7 @@ Setup
 Clone the repo:
 
 bash
-git clone https://github.com/your-username/law-landing.git 
+git clone https://github.com/ArtyomBrazgovka/law-landing.git
 
 Install dependencies:
 
