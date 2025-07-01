@@ -1,7 +1,7 @@
 .experts-section {
   width: 100%;
   height: fit-content;
-  padding: 70px 0px 90px 50px;
+  padding: 10vh 0px 10vh 3vw;
   background-color: var(--ng-light-gray);
 }
 
@@ -9,6 +9,9 @@
   display: flex;
   gap: 4vh;
   height: 100%;
+  @media(max-width: 768px){
+    flex-direction: column;
+  }
 }
 
 .experts-content {
@@ -70,6 +73,9 @@
   scroll-behavior: smooth;
   scrollbar-color: var(--ng-light-gray) var(--disable-gray);
   padding-bottom: 8px;
+  @media(max-width: 768px){
+    width: 90%;
+  }
 }
 
 .experts-team .expert-card:nth-child(even) {
