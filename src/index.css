@@ -7,14 +7,15 @@
 
 @font-face {
   font-family: "OptimalEL Regular";
-  src: url("/fonts/optimalEL-text.otf") format("otf");
+  src: url("/fonts/optimaEl-text.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: Kornilow;
-  src: url("/fonts/kornilow.ttf") format("ttf");
+  src: url("/fonts/kornilow.woff") format("woff");
   font-style: normal;
   font-display: swap;
 }

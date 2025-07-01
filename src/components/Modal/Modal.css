@@ -17,7 +17,7 @@
 .modal-container {
   transform: scale(0.5);
   transition: 0.4s all;
-  width: fit-content;
+  width: 70vw;
   height: fit-content;
   padding: 24px;
   background-color: white;
@@ -35,8 +35,8 @@
 .modal-close {
   position: absolute;
   border: none;
-  top: -20px;
-  right: -20px;
+  top: -30px;
+  right: -30px;
   background-color: transparent;
 }
 

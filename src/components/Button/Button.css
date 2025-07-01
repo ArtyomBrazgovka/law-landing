@@ -1,12 +1,19 @@
 .button {
   width: fit-content;
   height: fit-content;
-  padding: 
-  clamp(8px, 0.5rem + 0.5vw, 12px) 
-  clamp(16px, 1rem + 1vw, 24px);
+  padding: clamp(8px, 1.5vw, 14px) clamp(16px, 1rem + 1vw, 24px);
   border: 1px solid var(--light-yellow);
   background-color: transparent;
   font-size: clamp(0.75rem, 0.5rem + 0.6667vw, 0.875rem);
+  white-space: nowrap;
   text-transform: uppercase;
   font-family: "Optimal Regular", sans-serif;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  color: rgba(var(--text-dark), 1);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px var(--disable-gray);
+  border: 1px solid var(--light-yellow);
 }

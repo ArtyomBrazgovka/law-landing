@@ -29,9 +29,7 @@ export function Reviews() {
           </h2>
         </div>
         <div className="reviews-content">
-          <button className="reviews-left-arrow" onClick={prevReview}>
-            ←
-          </button>
+          <button className="reviews-left-arrow" onClick={prevReview}></button>
           <div className="reviews-block">
             <div className="reviews-rectangle"></div>
             <div className="reviews-comment">
@@ -41,9 +39,7 @@ export function Reviews() {
               <Review {...reviewsData[currentReviewIndex]} />
             </div>
           </div>
-          <button className="reviews-right-arrow" onClick={nextReview}>
-            →
-          </button>
+          <button className="reviews-right-arrow" onClick={nextReview}></button>
         </div>
         <div className="reviews-buttons">
           {reviewsData.map(({id}) => (
