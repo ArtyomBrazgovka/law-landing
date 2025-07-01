@@ -50,6 +50,7 @@
   font-family: "OptimalEL Regular", sans-serif;
   font-weight: 100;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .experts-text p {

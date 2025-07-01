@@ -105,8 +105,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 16px;
-  height: 2px;
+  width: 14px;
+  height: 0.6px;
   background: white;
   transform: translate(-50%, -50%);
 }
@@ -116,10 +116,10 @@
   position: absolute;
   top: 50%;
   left: 35%;
-  width: 8px;
-  height: 8px;
-  border-left: 2px solid white;
-  border-bottom: 2px solid white;
+  width: 4px;
+  height: 4px;
+  border-left: 0.6px solid white;
+  border-bottom: 0.6px solid white;
   transform: translate(0, -50%) rotate(45deg);
 }
 
@@ -128,10 +128,10 @@
   position: absolute;
   top: 50%;
   right: 35%;
-  width: 8px;
-  height: 8px;
-  border-right: 2px solid white;
-  border-top: 2px solid white;
+  width: 4px;
+  height: 4px;
+  border-right: 0.6px solid white;
+  border-top: 0.6px solid white;
   transform: translate(0, -50%) rotate(45deg);
 }
 

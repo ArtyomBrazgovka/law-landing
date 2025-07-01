@@ -20,6 +20,7 @@
 }
 
 .review-text {
+  width: 46vw;
   font-size: clamp(0.75rem, 0.5rem + 0.6667vw, 1rem);;
   font: Montserrat, sans-serif;
   font-weight: 300;
